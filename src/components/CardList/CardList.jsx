@@ -5,8 +5,8 @@ export const CardList = ({ data }) => {
   return (
     <Container>
       <TweetsUsersList>
-        {data.map(item => (
-          <Card key={item.id} data={item} />
+        {data.map((item, index) => (
+          <Card key={index} data={item} />
         ))}
       </TweetsUsersList>
     </Container>

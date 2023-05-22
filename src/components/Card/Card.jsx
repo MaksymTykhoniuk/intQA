@@ -1,6 +1,12 @@
 import { useState } from 'react';
 
-import { CardWrapper, CardText } from './Card.styled';
+import {
+  CardWrapper,
+  CardText,
+  Button,
+  TextWrapper,
+  CardAnswer,
+} from './Card.styled';
 
 export const Card = ({ data }) => {
   const [showAnswer, setShowAnswer] = useState(false);
@@ -12,12 +18,15 @@ export const Card = ({ data }) => {
   return (
     <>
       <CardWrapper>
-        <CardText> Q: {data.question} </CardText>
-        <button onClick={handleShowAnswer} type="button">
+        <Button onClick={handleShowAnswer} type="button">
           {showAnswer ? 'hide' : 'show'}
-        </button>
+        </Button>
 
-        {showAnswer && <CardText>A: {data.answer}</CardText>}
+        <TextWrapper showAnswer={showAnswer}>
+          <CardText showAnswer={showAnswer}> Q: {data.question} </CardText>
+
+          {showAnswer && <CardAnswer>A: {data.answer}</CardAnswer>}
+        </TextWrapper>
       </CardWrapper>
     </>
   );
