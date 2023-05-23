@@ -6,9 +6,10 @@ import {
   Button,
   TextWrapper,
   CardAnswer,
+  Count,
 } from './Card.styled';
 
-export const Card = ({ data }) => {
+export const Card = ({ data, index }) => {
   const [showAnswer, setShowAnswer] = useState(false);
 
   const handleShowAnswer = () => {
@@ -18,6 +19,8 @@ export const Card = ({ data }) => {
   return (
     <>
       <CardWrapper>
+        <Count>{index + 1}</Count>
+
         <Button onClick={handleShowAnswer} type="button">
           {showAnswer ? 'hide' : 'show'}
         </Button>

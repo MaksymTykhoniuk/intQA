@@ -3,7 +3,21 @@ import styled from '@emotion/styled';
 export const CardWrapper = styled.li`
   position: relative;
   display: flex;
+  padding: 20px;
   gap: 30px;
+  border: 1px solid #ff4400bd;
+  border-radius: 14px;
+  align-items: start;
+`;
+
+export const Count = styled.p`
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  align-self: center;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #212112;
 `;
 
 export const Button = styled.button`
@@ -19,6 +33,7 @@ export const Button = styled.button`
   max-height: 32px;
   text-align: center;
   width: 100px;
+  margin-left: 25px;
 `;
 
 export const TextWrapper = styled.div`
