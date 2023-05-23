@@ -17,7 +17,7 @@ export const Title = styled.h1`
   margin-bottom: 24px;
   color: black;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   align-self: center;
 `;
 
@@ -35,7 +35,7 @@ export const SectionLink = styled(Link)`
   text-decoration: none;
   color: black;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 5px;
 
   &:hover {
