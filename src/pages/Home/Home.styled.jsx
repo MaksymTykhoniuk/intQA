@@ -22,9 +22,6 @@ export const Title = styled.h1`
 `;
 
 export const CardWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 770px;
   margin-bottom: 24px;
   padding: 20px;
@@ -34,11 +31,12 @@ export const CardWrapper = styled.div`
 
 export const SectionLink = styled(Link)`
   padding: 8px 16px;
+  display: block;
   text-decoration: none;
   color: black;
   font-weight: 500;
   font-size: 40px;
-  align-self: center;
+  margin-bottom: 5px;
 
   &:hover {
     color: orange;
