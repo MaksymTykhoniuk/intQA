@@ -15,6 +15,8 @@ const dataJS = questionJS;
 const dataREACT = questionREACT;
 const dataHTML = questionHTML;
 const random = Math.floor(Math.random() * dataHTML.length);
+const randomREACT = Math.floor(Math.random() * dataREACT.length);
+const randomJS = Math.floor(Math.random() * dataJS.length);
 
 const Home = () => {
   return (
@@ -23,15 +25,15 @@ const Home = () => {
       <Container>
         <CardWrapper>
           <SectionLink to="/html">HTML</SectionLink>
-          <Card data={dataHTML[random]} />
+          <Card data={dataHTML[random]} index={random} />
         </CardWrapper>
         <CardWrapper>
           <SectionLink to="/js">JS</SectionLink>
-          <Card data={dataJS[random]} />
+          <Card data={dataJS[randomJS]} index={randomJS} />
         </CardWrapper>
         <CardWrapper>
           <SectionLink to="/react">REACT</SectionLink>
-          <Card data={dataREACT[random]} />
+          <Card data={dataREACT[randomREACT]} index={randomREACT} />
         </CardWrapper>
       </Container>
     </Section>
