@@ -24,15 +24,15 @@ const Home = () => {
       <Title>Welcome</Title>
       <Container>
         <CardWrapper>
-          <SectionLink to="/html">HTML</SectionLink>
+          <SectionLink to="/html"> go to HTML</SectionLink>
           <Card data={dataHTML[random]} index={random} />
         </CardWrapper>
         <CardWrapper>
-          <SectionLink to="/js">JS</SectionLink>
+          <SectionLink to="/js"> go to JS</SectionLink>
           <Card data={dataJS[randomJS]} index={randomJS} />
         </CardWrapper>
         <CardWrapper>
-          <SectionLink to="/react">REACT</SectionLink>
+          <SectionLink to="/react"> go to REACT</SectionLink>
           <Card data={dataREACT[randomREACT]} index={randomREACT} />
         </CardWrapper>
       </Container>
